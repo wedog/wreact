@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "material-ui": "^0.18.4",
+    "normalize.css": "^7.0.0",
     "react-scripts": "1.0.7"
   },
   "scripts": {
