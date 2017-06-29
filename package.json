@@ -8,6 +8,7 @@
     "react-tap-event-plugin": "^2.0.1"
   },
   "devDependencies": {
+    "font-awesome": "^4.7.0",
     "material-ui": "^0.18.4",
     "normalize.css": "^7.0.0",
     "react-scripts": "1.0.7"
