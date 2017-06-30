@@ -1,9 +1,7 @@
 .site-header{
     width: 100%;
     padding-bottom: 35px;
-    -webkit-transition: all .2s ease-out;
     transition: all .2s ease-out;
-    -webkit-transition-property: color, background-color;
     transition-property: color, background-color;
 }
 .site-header{
@@ -57,7 +55,7 @@
 }
 .navbar-menu > li > a{
     display: block;
-    padding: 14px 0;
+    padding: 10px 0;
     color: #252525;
     text-decoration: none;
     opacity: 1;
@@ -67,16 +65,27 @@
     transition: opacity .3s ease-in-out;
 }
 .navbar-middle{
-    display: flex;
     width: 100%;
-    flex-basis: 100%;
     justify-content: center;
     text-align: center;
-    margin-bottom: 86px;
-    flex-shrink: 0;
-    font-size: 80px;
-    font-weight: bold;
+    margin-bottom: 56px;
     text-transform: none;
+}
+.navbar-middle > a{
+    display: block;
+    height: 121px;
+    transition: color .2s ease-out;
+}
+.navbar-middle > a > img{
+    height: 121px;
+    border-radius: 50%;
+}
+.navbar-middle>h2{
+    font-weight: 600;
+}
+.navbar-middle>h3{
+    line-height: 1.5;
+    font-weight: 300;
 }
 .navbar-bottom{
     position: relative;
@@ -86,6 +95,7 @@
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    font-weight: bold;
 }
 .navbar-bottom > nav > ul{
     display: flex;
@@ -104,6 +114,10 @@
     align-items: center;
     text-decoration: none;
     color: #161616;
+}
+.navbar-bottom li>a:hover{
+    font-weight: normal;
+    transition: font-weight .3s ease-in-out;
 }
 .navbar-bottom li > a:before{
     content: "";

@@ -3,6 +3,7 @@
  */
 import React, { Component } from 'react';
 import './Header.css';
+import wedog from './images/wedog.jpg';
 
 class Header extends Component{
     render(){
@@ -21,7 +22,7 @@ class Header extends Component{
                             <nav className="navbar-right">
                                 <ul className="navbar-menu">
                                     <li>
-                                        <a href="https://github.com/wedog">
+                                        <a href="https://github.com/wedog" target="_blank">
                                             <i className="fa fa-github fa-2x" aria-hidden="true"></i>
                                         </a>
                                     </li>
@@ -34,7 +35,11 @@ class Header extends Component{
                             </nav>
                         </div>
                         <div className="navbar-middle">
-                            Yong.Liu
+                            <a href="https://github.com/wedog" target="_blank">
+                                <img src={wedog}/>
+                            </a>
+                            <h2>Yong.Liu</h2>
+                            <h3>Front end development engineer </h3>
                         </div>
                         <div className="navbar-bottom">
                             <nav>
