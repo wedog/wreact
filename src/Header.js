@@ -15,19 +15,19 @@ class Header extends Component{
                             <nav className="navbar-left">
                                 <ul className="navbar-menu">
                                     <li>
-                                        <a href="#">About</a>
+                                        <a href="">About</a>
                                     </li>
                                 </ul>
                             </nav>
                             <nav className="navbar-right">
                                 <ul className="navbar-menu">
                                     <li>
-                                        <a href="https://github.com/wedog" target="_blank">
+                                        <a href="https://github.com/wedog" target="_blank" rel="noopener noreferrer">
                                             <i className="fa fa-github fa-2x" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(-1);">
+                                        <a href="">
                                             <i className="fa fa-search fa-2x" aria-hidden="true"></i>
                                         </a>
                                     </li>
@@ -35,8 +35,8 @@ class Header extends Component{
                             </nav>
                         </div>
                         <div className="navbar-middle">
-                            <a href="https://github.com/wedog" target="_blank">
-                                <img src={wedog}/>
+                            <a href="https://github.com/wedog" target="_blank" rel="noopener noreferrer">
+                                <img src={wedog} alt="wedog"/>
                             </a>
                             <h2>Yong.Liu</h2>
                             <h3>Front end development engineer </h3>
@@ -45,17 +45,17 @@ class Header extends Component{
                             <nav>
                                 <ul>
                                     <li>
-                                        <a href="javascript:void(-1);">
+                                        <a href="">
                                             home
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(-1);">
+                                        <a href="">
                                             note
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(-1);">
+                                        <a href="">
                                             any
                                         </a>
                                     </li>

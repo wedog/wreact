@@ -15,9 +15,19 @@
 }
 .main > header{
     margin-top: 56px;
+    margin-bottom: 35px;
 }
 .main-container{
-
+    color: #777;
+}
+.main-container p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.main-container ul{
+    margin-left: 40px;
+    list-style: disc;
 }
 .main-side{
     flex: none;
