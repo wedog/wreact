@@ -63,6 +63,22 @@ class Content extends Component{
                                     <li>The flex property shorthands the flex-grow, flex-shrink, and flex-basis properties
                                         to establish the flexibility of the flex items.</li>
                                 </ul>
+                                <p></p>
+                                <p>如何将github上fork的开源项目的更改合入自己的项目（解决遇到冲突的情况）。例如他人开源项目：https://github.com/quasarframework/quasar.git;
+                                本人fork后的项目：https://github.com/wedog/quasar.git</p>
+                                <ul>
+                                    <li>
+                                        在自己的项目中执行：
+                                        <ol>
+                                            <li>新建本地分支<code>git checkout -b quasarframework-dev dev</code></li>
+                                            <li>pull他人的分支代码：<code>git pull https://github.com/quasarframework/quasar.git dev</code></li>
+                                            <li>解决冲突（如果有）</li>
+                                            <li>切换到dev分支：<code>git checkout dev</code></li>
+                                            <li>合入quasarframework-dev的代码到dev分支：<code>git merge --no-ff quasarframework-dev</code></li>
+                                            <li>提交dev分支到远程分支：<code>git push origin dev</code></li>
+                                        </ol>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div className="main-side">
