@@ -26,8 +26,23 @@ ly.showName()  //返回ly
 
 ```
 function lnew(){
-    var obj = new Object() // obj.__proto__ === Object.prototype
+    var obj = new Object() 
+    var base= Array.prototype.shift.call(arguments)
+    obj.__proto__ = base.prototype 
+    var ret = base.apply(obj, arguments) 
+    return typeof ret==='object'?ret:obj
 }
+var per = lnew(Person,'ly')
+per.name //输出ly
+per.showName() //输出ly
 ```
+
+### 解析 lnew
+1. 创建一个空对象, obj的原型对象指向Object.prototype, 所以obj.__proto__ === Object.prototype。    
+2. 取出第一个参数，即base函数。
+3. 设置obj的__proto__的值为base的prototype。则obj和base的原型链构造完毕，obj可以访问base原型上的属性及方法。
+4. 调用构造函数，并将this绑定到obj上。如果构造函数有返回对象，则lnew的返回值为该对象，否则为新创建的对象obj。
+
+
 
 
