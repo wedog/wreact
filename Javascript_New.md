@@ -19,7 +19,9 @@ function Person(name){
 Person.prototype.showName = function(){
     return this.name
 }
+var ly = new Person('ly')
+ly.showName()  //返回ly
 ```
-
+### 模拟 new 运算符
 
 
