@@ -24,4 +24,10 @@ ly.showName()  //返回ly
 ```
 ### 模拟 new 运算符
 
+```
+function lnew(){
+    var obj = new Object() // obj.__proto__ === Object.prototype
+}
+```
+
 
