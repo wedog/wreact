@@ -12,7 +12,6 @@
 
 创建用户自定对象：
 
-
 ```
 function Person(name){
     this.name = name
