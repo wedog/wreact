@@ -11,7 +11,16 @@
 ### 准备工作
 
 创建用户自定对象：
+
+
 ```
-    ddd
+function Person(name){
+    this.name = name
+}
+Person.prototype.showName = function(){
+    return this.name
+}
 ```
+
+
 
